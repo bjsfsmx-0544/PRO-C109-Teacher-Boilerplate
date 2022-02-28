@@ -13,12 +13,9 @@ hands = mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5
 
 tipIds = [4, 8, 12, 16, 20]
 
-state = None
 
 # Define a function to count fingers
 def countFingers(image, hand_landmarks, handNo=0):
-
-    global state
 
     if hand_landmarks:
         # Get all Landmarks of the FIRST Hand VISIBLE
